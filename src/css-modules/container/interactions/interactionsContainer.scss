@@ -1,0 +1,12 @@
+.int {
+    height: 100vh;
+    @extend %bg-cover;
+    &-container {
+        height: calc(100vh - 180px);
+        margin-top:30px;
+        @extend %shdw-blur-m;
+        backdrop-filter: blur(300px);
+        border-radius: 30px;
+        @extend %white-gd;
+    }
+}

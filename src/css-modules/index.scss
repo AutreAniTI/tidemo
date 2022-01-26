@@ -1,0 +1,13 @@
+@import './components/index.scss';
+@import './container/index.scss';
+
+.container {
+    width:80%;
+    margin:0 auto;
+}
+
+.App,
+body {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tidemo/static/css/main.73dbb1b5.css",
+    "main.js": "/tidemo/static/js/main.87d46190.js",
+    "static/media/ti_logo_animation.gif": "/tidemo/static/media/ti_logo_animation.884e517255972e04b55f.gif",
+    "static/media/interactionsBg.png": "/tidemo/static/media/interactionsBg.dce5ee200ce9e45006e4.png",
+    "static/media/outgoing.png": "/tidemo/static/media/outgoing.a756e1ff0816ec8503a9.png",
+    "index.html": "/tidemo/index.html",
+    "main.73dbb1b5.css.map": "/tidemo/static/css/main.73dbb1b5.css.map",
+    "main.87d46190.js.map": "/tidemo/static/js/main.87d46190.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73dbb1b5.css",
+    "static/js/main.87d46190.js"
+  ]
+}

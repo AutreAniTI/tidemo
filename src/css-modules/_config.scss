@@ -1,3 +1,9 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$roboto : 'Roboto', sans-serif;
+
+
 //colors
 
 //logo colors
@@ -5,6 +11,21 @@ $green: #0CA025;
 $blue: #06AED5;
 $red: #E3170A;
 $yellow: #FFAE03;
+
+//secondary
+$orange:#FA6F05;
+
+//shades of blue
+$blue07: rgba(0, 151, 186, .7);
+
+//shades of green
+$green07: rgba(11, 130, 31, .7);
+
+//shades of yellow
+$yellow07:rgba(212, 146, 6, .7);
+
+//shades of red
+$red07:rgba(190, 11, 0, .7);
 
 //font color
 $font-primary: #2c2c2c;

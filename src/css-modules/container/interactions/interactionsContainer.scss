@@ -1,9 +1,10 @@
 .int {
     height: 100vh;
+    min-height: 750px;
     @extend %bg-cover;
     &-container {
-        height: calc(100vh - 180px);
-        margin-top:30px;
+        height: calc(100% - 180px);
+        margin-top:30px !important;
         @extend %shdw-blur-m;
         backdrop-filter: blur(300px);
         border-radius: 30px;

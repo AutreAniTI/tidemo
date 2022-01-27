@@ -1,5 +1,6 @@
 import Header from "../../components/Header/Header";
 import Background from '../../assets/images/background/interactionsBg.png';
+import InteractionsNav from "../InteractionsNav/InteractionsNav";
 
 const Interactions = () => {
     return ( 
@@ -8,7 +9,7 @@ const Interactions = () => {
         className = "int">
             <Header />
             <div className = " int-container container">
-                <h1>Slider</h1>
+              <InteractionsNav/>
             </div>
         </div>
      );

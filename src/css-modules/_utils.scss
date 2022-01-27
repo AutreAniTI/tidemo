@@ -96,3 +96,10 @@
                                 rgba(255, 255, 255, 0.21) 100%);
 
 }
+
+
+//dashed circle border
+
+%border-dashed-circle {
+    background-image: url('data:image/svg+xml,%3csvg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"%3e%3crect width="100%25" height="100%25" fill="none" rx="160" ry="160" stroke="DeepSkyBlue" stroke-width="3" stroke-dasharray="10%2c15" stroke-dashoffset="160" stroke-linecap="butt"/%3e%3c/svg%3e');
+}

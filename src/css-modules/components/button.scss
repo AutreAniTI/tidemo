@@ -1,0 +1,22 @@
+.button-main {
+    width: 220px;
+    height:60px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    color:white;
+    background: linear-gradient(45deg, $blue , $green );
+    cursor: pointer;
+    outline: none;
+    border: none;
+    &:hover {
+        background: linear-gradient(90deg, $blue , $green );
+
+    }
+}
+
+
+
+

@@ -1,12 +1,5 @@
 import Logo from "../Logo/Logo";
-import OutGoing from '../../assets/icons/ImageIcons/outgoing.png';
-import ShadowedWrapper from "../ShadowedWrapper/ShadowedWrapper";
-
-const CallIcon = () => {
-    <div
-        style={{ backgroundImage: `url(${OutGoing})` }}
-        className="call-icon" />
-}
+import OutGoing from '../../assets/icons/IconImages/outgoing.png';
 
 const Header = () => {
     return (

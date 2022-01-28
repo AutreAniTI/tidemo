@@ -2,7 +2,7 @@ import { NAV_ITEMS_MAIN, NAV_ITEMS_SMALL } from "./navItems";
 import NavCircle from "../../components/NavCircle/NavCircle";
 import DashedPolygon from "../../components/DashedComponents/DashedPolygon";
 import DashedLine from "../../components/DashedComponents/DashedLine";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 const InteractionsNav = () => {
     const [activeNav, setActiveNav] = useState();

@@ -6,9 +6,16 @@
     align-items: center;
     justify-content: center;
 }
+//flex box flex-start
+
+%fb-fs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
 //flex-box-center column
-%fb-c{
+%fb-col{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,6 +1,6 @@
 .int {
     height: 100vh;
-    min-height: 750px;
+    // min-height: 750px;
     @extend %bg-cover;
     &-container {
         height: calc(100% - 180px);
@@ -9,5 +9,13 @@
         backdrop-filter: blur(300px);
         border-radius: 30px;
         @extend %white-gd;
+        @media screen and (max-height: 900px){
+            height: calc(100% - 120px);
+            margin-top:0;
+        }
+    }
+    &-item {
+        @extend %fb-col;
+        padding: 0 1vw;
     }
 }

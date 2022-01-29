@@ -13,6 +13,20 @@
     align-items: center;
     justify-content: flex-start;
 }
+//align flex start justify flex start
+
+%fb-fs-fs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+//justfiy flex end
+%fb-fe{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 //flex-box-center column
 %fb-col{

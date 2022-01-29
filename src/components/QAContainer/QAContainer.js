@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import Accordion from '../Accordion/Accordion';
 
 const QAContainer = ({
-    BoxContent,
+    arr,
     Icon,
     className
 }) => {
@@ -30,7 +30,8 @@ const QAContainer = ({
                 showBox &&
                 <div
                     className="box-content-wrapper">
-                        <Accordion/>
+                        <Accordion
+                        arr = {arr}/>
                 </div>
             }
             <Icon />

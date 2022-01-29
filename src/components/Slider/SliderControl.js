@@ -7,13 +7,14 @@ import ExclamationIcon from '../../assets/icons/Icons/ExclamationMIcon';
 import QuestionIcon from '../../assets/icons/Icons/QuestionMIcon';
 import QAContainer from "../QAContainer/QAContainer";
 
-const DIV = () => <div>Text</div>
 
 const SliderControl = ({
-    state,
+    arr,
     handlePrevClick,
-    handleNextClick
+    handleNextClick,
+    state,
 }) => {
+
     return (
         <div className="button-wrapper">
             <Button
@@ -22,19 +23,32 @@ const SliderControl = ({
                 label="Go back"
                 handleClick={handlePrevClick} />
             <div className="question-exclamation-wrapper">
-                <QAContainer
-                    className="qa-container-left"
-                    Icon={ExclamationIcon}
-                    BoxContent={DIV} />
-                <QAContainer
-                    className="qa-container-right"
-                    Icon={QuestionIcon}
-                    BoxContent={DIV} />
-                {/* <Exclamation />
-                <Question /> */}
+                {
+                    arr &&
+                    <>
+                        {
+                            arr.exclam &&
+                            <QAContainer
+                                arr={arr.exclam}
+                                className="qa-container-left"
+                                Icon={ExclamationIcon} />
+                        }
+                        {
+                            arr.question &&
+                            <QAContainer
+                                arr={arr.question}
+                                className="qa-container-right"
+                                Icon={QuestionIcon} />
+                        }
+                    </>
+                }
             </div>
             <Button
-                className="continue-btn"
+                className={`continue-btn 
+                    ${state.disabled?
+                     "button-disabled": undefined}
+                     ${state.incomplete?
+                    "button-incomplete": undefined}`}
                 children={<NextIcon />}
                 label="Continue"
                 handleClick={handleNextClick} />

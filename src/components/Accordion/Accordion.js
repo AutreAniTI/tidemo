@@ -1,24 +1,6 @@
 import AccordionItem from "./AccordionItem";
-const arr = [
-    {
-        summary: "text1",
-        content: "A longer anser to summary"
-    },
-    {
-        summary: "text2",
-        content: "A longer anser to summary"
-    },
-    {
-        summary: "text3",
-        content: "A longer anser to summary"
-    },
-    {
-        summary: "text4",
-        content: "A longer anser to summary"
-    },
-]
 
-const Accordion = () => {
+const Accordion = ({arr}) => {
     const list = arr.map((elem, index) => (
         <AccordionItem
             summary={elem.summary}

@@ -2,31 +2,39 @@ import { useEffect, useRef, useState } from "react";
 import SlideElement from "./SlideElement";
 import SliderControl from "./SliderControl";
 
-
-
-const arr = ["first", "second", "third", "fourth", "fifth"];
-
-
-const Slider = () => {
+const Slider = ({
+    controller,
+    components,
+    autoplay
+}) => {
     const [width, setWidth] = useState()
     const outerSlider = useRef();
     const [state, setState] = useState({
         active: 1,
         left: 0,
+        disabled: false,
+        incomplete:false,
     })
-
 
     useEffect(() => {
         if (outerSlider.current)
             setWidth(outerSlider.current.offsetWidth)
     }, [outerSlider.current])
 
-    const innerSlider = arr.map((elem, index) => (
+    const innerSlider = components.map((elem, index) => (
         <SlideElement
+            setDisabled={(bool) => setState({
+                ...state,
+                disabled: bool
+            })}
+            setIncomplete={(bool) => setState({
+                ...state,
+                incomplete: bool
+            })}
+            index = {index}
             active={(state.active - 1) === index}
-            n={index + 1}
             key={index}
-            elem={elem}
+            Elem={elem}
             width={width}
         />
     ))
@@ -41,7 +49,7 @@ const Slider = () => {
     }
 
     const handleNextClick = () => {
-        if (state.active !== arr.length) {
+        if (state.active !== components.length) {
             setState({
                 left: state.left - width,
                 active: state.active + 1,
@@ -61,10 +69,14 @@ const Slider = () => {
                     innerSlider
                 }
             </div>
+            {
+                !autoplay &&
                 <SliderControl
-                    handleNextClick = {handleNextClick}
-                    handlePrevClick = {handlePrevClick}
-                    state = {state}/>
+                    arr={controller[state.active - 1]}
+                    handleNextClick={handleNextClick}
+                    handlePrevClick={handlePrevClick}
+                    state={state} />
+            }
         </div>
     );
 }

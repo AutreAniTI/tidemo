@@ -1,7 +1,7 @@
 .accordion {
     @extend %shdw-blur-l;
     background:#fff;
-    width:200px;
+    width:300px;
     border-radius:10px;
     color:$font-gray-light;
     overflow: hidden;
@@ -26,5 +26,17 @@
     }
     &-summary {
         cursor: pointer;
+        color:$font-primary;
     }
+    @media screen and (max-height: 900px){
+       width:200px;
+       p {
+           font-size: 14px;
+           padding:10px;
+           svg {
+            width:12px;
+        }
+       }
+    
+   }
 }
